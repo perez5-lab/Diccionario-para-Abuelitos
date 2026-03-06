@@ -1,0 +1,25 @@
+meme_dict = {
+    "CRINGE": "Algo excepcionalmente raro o embarazoso",
+    "LOL": "Una respuesta común a algo gracioso",
+    "MEME": "Imagen o video viral con humor",
+    "NOOB": "Alguien nuevo o sin experiencia",
+    "GG": "Good Game, expresión de buen juego",
+    "AFK": "Away From Keyboard, ausente del teclado",
+    "BFF": "Best Friends Forever, mejores amigos para siempre",
+    "CREEPY": "aterrador, siniestro",
+    "AGGRO": "ponerse agresivo/enojado",
+}
+
+print("¡Bienvenido al Diccionario de Memes!")
+print("Te ayudaré a entender palabras de internet.")
+print("--------------------------------------------")
+
+for i in range(5):
+    word = input("Escribe una palabra que no entiendas (¡con mayúsculas!): ")
+    if word in meme_dict.keys():
+        print("'{}' significa: {}".format(word, meme_dict[word]))
+    else:
+        print("Lo siento, '{}' no está en el diccionario todavía.".format(word))
+    print()
+
+print("¡Gracias por usar el Diccionario de Memes!")
